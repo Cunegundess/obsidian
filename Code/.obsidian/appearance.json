@@ -1,9 +1,12 @@
 {
   "theme": "obsidian",
-  "accentColor": "#00126b",
+  "accentColor": "",
   "interfaceFontFamily": "",
   "textFontFamily": "JetBrainsMono Nerd Font",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "baseFontSize": 12,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "cssTheme": "Atom",
+  "showViewHeader": true,
+  "nativeMenus": false
 }
