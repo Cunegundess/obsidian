@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a9e5b434691be504",
+        "id": "fad7e5f08eadd172",
         "type": "tabs",
         "children": [
           {
-            "id": "7ed412cb14eeb299",
+            "id": "9b5bb35084369e2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Youtan/Publicação.md",
+                "file": "Livro_CleanCode/Capítulo 2 - Nomes Significativos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Publicação"
+              "title": "Capítulo 2 - Nomes Significativos"
             }
           }
         ]
@@ -43,7 +43,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/Git.md",
+                "file": "Code/DSA/BigO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Git"
+              "title": "Links inversos para BigO"
             }
           },
           {
@@ -139,13 +139,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code/Git.md"
+                "file": "Dicas Jr.md"
               },
               "icon": "lucide-list",
-              "title": "Sumário de Git"
+              "title": "Outline of Dicas Jr"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -154,28 +155,45 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "d22acf4db023b0ea",
+  "active": "9b5bb35084369e2c",
   "lastOpenFiles": [
-    "Youtan/Senhas.md",
+    "Livro_CleanCode/Capítulo 1 - Código Limpo.md",
+    "Livro_CleanCode/Capítulo 2 - Nomes Significativos.md",
+    "Livro_CleanCode/mapa_mental.canvas",
+    "Livro_CleanCode/capa.png",
+    "Livro_EntendendoAlgoritmos/capa.jpg",
+    "Livro_EntendendoAlgoritmos/mapa_mental.canvas",
+    "Livro_CleanCode/Captura de imagem_20250127_204327.png",
+    "Livro_CleanCode",
+    "Livro_EntendendoAlgoritmos",
+    "Code/Git.md",
+    "Code/DSA/BigO.md",
+    "Notes/Dicas Jr.md",
+    "Mapa Mental.md",
+    "Notes",
+    "Notes/Etapas Dev.md",
     "Youtan/Servidores.md",
+    "Youtan/Senhas.md",
+    "2024-11-01.md",
+    "frontendmasters.com/courses/algorithms/big-o-time-complexity.md",
+    "frontendmasters.com/courses/algorithms",
+    "frontendmasters.com/courses",
+    "frontendmasters.com",
+    "().md",
+    "Pasted image 20241101222950.png",
     "Youtan/Publicação.md",
     "Work/Senhas.md~",
     "Work/Publicação.md~",
     "Work/Servidores.md~",
     "Work/Sem título.md",
-    "Work/Sem título.md~",
-    "Code/Git.md",
-    "Work/gerenciar_servers_03_2024.txt",
-    "Work/publicacao.txt",
-    "Work/senhas.txt",
-    "Youtan"
+    "Work/Sem título.md~"
   ]
 }

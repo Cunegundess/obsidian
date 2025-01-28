@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"f4283e3d9e06a301","type":"file","file":"Livro_CleanCode/capa.png","x":-200,"y":-200,"width":298,"height":400},
+		{"id":"3c04a4108f9fd888","type":"file","file":"Livro_CleanCode/Capítulo 1 - Código Limpo.md","x":240,"y":-200,"width":400,"height":400}
+	],
+	"edges":[
+		{"id":"5d042c781d7d7a19","fromNode":"f4283e3d9e06a301","fromSide":"right","toNode":"3c04a4108f9fd888","toSide":"left"}
+	]
+}

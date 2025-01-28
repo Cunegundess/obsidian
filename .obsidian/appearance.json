@@ -1,1 +1,7 @@
-{}
+{
+  "interfaceFontFamily": "Poppins",
+  "textFontFamily": "Poppins",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "nativeMenus": true,
+  "cssTheme": "Sanctum"
+}
