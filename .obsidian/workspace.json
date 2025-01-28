@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Livro_CleanCode/Capítulo 2 - Nomes Significativos.md",
+                "file": "Livro_EntendendoAlgoritmos/Capítulo 1 - Introdução a algoritmos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Capítulo 2 - Nomes Significativos"
+              "title": "Capítulo 1 - Introdução a algoritmos"
             }
           }
         ]
@@ -165,8 +165,9 @@
   },
   "active": "9b5bb35084369e2c",
   "lastOpenFiles": [
-    "Livro_CleanCode/Capítulo 1 - Código Limpo.md",
     "Livro_CleanCode/Capítulo 2 - Nomes Significativos.md",
+    "Livro_EntendendoAlgoritmos/Capítulo 1 - Introdução a algoritmos.md",
+    "Livro_CleanCode/Capítulo 1 - Código Limpo.md",
     "Livro_CleanCode/mapa_mental.canvas",
     "Livro_CleanCode/capa.png",
     "Livro_EntendendoAlgoritmos/capa.jpg",
