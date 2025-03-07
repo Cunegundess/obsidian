@@ -1,0 +1,46 @@
+Suponha que você tenha um monte de músicas no seu computador. Para cada artista, você tem um contador de plays
+
+| Artistas           | Contador de Plays |
+| ------------------ | ----------------- |
+| RadioHead          | 156               |
+| Kishore Kumar      | 141               |
+| The Black Keys     | 35                |
+| Neutral Milk Hotel | 94                |
+| Beck               | 88                |
+| The Strokes        | 61                |
+| Wilco              | 111<br>           |
+
+Você quer ordenar uma lista de artistas, do mais tocado para o menos tocado, para que possa categorizar os seus artistas favoritos. Como pode fazer isso?
+Uma maneira seria pegar o artista mais tocado da lista de músicas e adicioná-lo a uma nova lista repetidamente
+
+Vamos pensar como engenheiros da computação e avaliar quanto tempo isso demoraria para ser executado, Lembrando que `O(n)` significa que você precisa passar por todos os elementos da lista uma vez. Por exemplo, executar uma pesquisa simples na lista de artistas significa olhar para cada artista uma vez. Para encontrar o artista com maior número de plays, você precisa verificar cada item da lista. Isso tem tempo de execução `O(n)` e você precisa repetir essa operação `n` vezes. Isso tem tempo de execução `O(n x n)` ou `O(n**2)`
+
+A ordenação por seleção é um algoritmo bom, mas não é muito rápido.
+
+# Exemplo de Código para ordenar um array do menor para o maior
+
+```python
+def buscaMenor(arr):
+	menor = arr[0] 
+	menor_indice = 0 
+
+	for i in range(1, len(arr)):
+		if arr[i] < menor:
+			menor = arr[i]
+			menor_indice = i
+
+	return menor_indice
+```
+
+Agora você pode usar essa função para escrever a ordenação por seleção
+
+```python
+def ordenacaoporSelecao(arr):
+	novoArr = []
+
+	for i in range(len(arr)):
+		menor = buscaMenor(arr)
+		novoArr.append(arr.pop(menor))
+
+	return novoArr
+```

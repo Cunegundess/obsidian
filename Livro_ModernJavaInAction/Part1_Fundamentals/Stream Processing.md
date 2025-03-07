@@ -1,0 +1,3 @@
+
+A Stream is a sequence of data items that are conceptually produced one at time. 
+A program might read items from an input stream one by one and similarly write items to an output stream. The output stream of one program could well be the input stream of another.
