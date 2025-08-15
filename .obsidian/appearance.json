@@ -3,6 +3,6 @@
   "textFontFamily": "Poppins",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "nativeMenus": true,
-  "cssTheme": "",
+  "cssTheme": "Vesper",
   "theme": "obsidian"
 }

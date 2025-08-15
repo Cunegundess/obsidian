@@ -1,5 +1,6 @@
 [
-  "terminal",
   "oz-image-plugin",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "obsidian-git",
+  "obsidian-kanban"
 ]
