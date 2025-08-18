@@ -4,5 +4,7 @@
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "nativeMenus": true,
   "cssTheme": "Vesper",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "baseFontSize": 19,
+  "baseFontSizeAction": true
 }
