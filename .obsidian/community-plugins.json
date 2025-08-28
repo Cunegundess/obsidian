@@ -2,5 +2,13 @@
   "oz-image-plugin",
   "obsidian-excalidraw-plugin",
   "obsidian-kanban",
-  "custom-font-loader"
+  "custom-font-loader",
+  "obsidian-vimrc-support",
+  "dataview",
+  "obsidian-tasks-plugin",
+  "obsidian-rollover-daily-todos",
+  "calendar",
+  "omnisearch",
+  "obsidian-style-settings",
+  "obsidian-relative-line-numbers"
 ]

@@ -5,6 +5,7 @@
   "nativeMenus": true,
   "cssTheme": "Vesper",
   "theme": "obsidian",
-  "baseFontSize": 19,
-  "baseFontSizeAction": true
+  "baseFontSize": 17,
+  "baseFontSizeAction": true,
+  "accentColor": ""
 }

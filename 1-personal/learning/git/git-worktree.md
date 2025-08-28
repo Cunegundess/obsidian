@@ -1,0 +1,41 @@
+Um recurso do git que permite ter múltiplas cópias de um mesmo respositório, cada uma em uma pasta separada, compartilhando o mesmo `.git`
+
+# Por que é útil?
+Trabalhar em duas branches diferentes ao mesmo tempo, se manter atualizado e evitar conflitos (alternativa ao stash). Posso adicionar worktrees apontando para branches específicas, cada uma delas funcionando como um diretório independente, onde posso alterar arquivos, fazer commits e criar branches sem interferir em outras cópias.
+
+Resumindo, o `git worktree` é ótimo quando você quer:
+- Trabalhar em múltiplas branches ao mesmo tempo sem clonar o repositório
+- Testar mudanças sem atrapalhar a branch principal
+- Economizar espaço, já que todos os worktrees compartilham do mesmo histórico git
+
+## # Criar uma worktree para uma branch existente
+ 
+```bash
+git worktree add ../caminho/para/worktree nome-da-branch
+```
+
+## Criar uma worktree para uma nova branch
+ 
+```bash
+git worktree add ../caminho/para/worktree -b nome-da-branch
+```
+
+## Listar worktrees existentes
+ 
+```bash
+git worktree list
+```
+
+## Remover uma worktree
+ 
+```bash
+git worktree remove ../caminho/para/worktree
+```
+
+# Observações
+1. É uma boa prática criar uma worktree fora da raíz do repositório que possua um `.git`, por isso utilizamos os `..` antes do caminho da worktree, aliás, o git não permite criar uma worktree dentro de uma worktree existente (raiz do repositório) justamente por já possuir um `.git` e isso pode sobrescrever arquivos e gerar inconsistências
+2. O ThePrimeagen criou um plugin que utiliza o Telescope para navegar e gerenciar worktrees, link nas Referências
+
+# Referências
+- [ThePrimeagen - Git's Best and Most unknown feature](https://www.youtube.com/watch?v=2uEqYw-N8uE)
+- [ThePrimeagen/git-worktree.nvim](https://github.com/ThePrimeagen/git-worktree.nvim)

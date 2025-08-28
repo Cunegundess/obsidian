@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "062cdc7c57916256",
+        "id": "e26b3fe3250c52bb",
         "type": "tabs",
         "children": [
           {
-            "id": "830a99e43d1b2ca1",
+            "id": "aa74722de98c4ed2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4-templates/card_template.md",
+                "file": "1-personal/learning/conteudos-youtube.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "card_template"
+              "title": "conteudos-youtube"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 271.51103591918945
   },
   "right": {
     "id": "6971e02dc75d1fc0",
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code/Git.md",
+                "file": "1-personal/learning/git/git-worktree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Git"
+              "title": "Outgoing links from git-worktree"
             }
           },
           {
@@ -142,13 +142,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4-templates/card_template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of card_template"
+              "title": "Outline"
             }
           },
           {
@@ -164,16 +163,28 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "5a43edacb1e2b7a5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 267.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "omnisearch:Omnisearch": false,
+      "bases:Create new base": false,
       "publish:Publish changes...": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -186,52 +197,60 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "830a99e43d1b2ca1",
+  "active": "aa74722de98c4ed2",
   "lastOpenFiles": [
+    "2-work/projects/jalles/tickets/5061-validacao-de-ativacao-de-ordem-retorno-da-moega.md",
+    "2-work/projects/jalles/tickets/5139-alteracao-peso-bigbag.md",
+    "2-work/projects/jalles/tickets/5118-falha-sincronizacao-com-sap.md",
+    "2-work/projects/jalles/tickets/5056-trigger-balancas-big-bag.md",
+    "1-personal/learning/conteudos-youtube.md",
+    "2-work/projects/jalles/tickets/5139-alteracao-peso-bigbag.md~",
+    "1-personal/learning/dsa/big-o-notation.md",
+    "1-personal/learning/books/entendendo-algoritmos/capitulo-2/ordenacao-por-selecao.md",
+    "1-personal/learning/books/entendendo-algoritmos/capitulo-1/notacao-big-o.md",
+    "1-personal/learning/books/entendendo-algoritmos/capitulo-1/pesquisa-binaria.md",
+    "1-personal/learning/dsa",
+    "1-personal/learning/Untitled.md",
+    "home/lucas-proxion/Documentos/notes/0-inbox",
+    "home/lucas-proxion/Documentos/notes",
+    "home/lucas-proxion/Documentos",
     "home/lucas-proxion",
     "home",
+    "1-personal/learning/books/codigo-limpo/capa.png",
+    "1-personal/learning/books/codigo-limpo/capitulo-1.md",
+    "1-personal/learning/books/entendendo-algoritmos/capitulo-2/como-funciona-memoria.md",
+    "1-personal/learning/books/entendendo-algoritmos/capitulo-2/arrays-e-listas-encadeadas.md",
+    "1-personal/learning/books/spring-security-in-action/SpringSecurityinAction.pdf",
+    "1-personal/learning/books/modern-java-in-action/ModernJavainAction.pdf",
+    "1-personal/learning/books/modern-java-in-action/Part1_Fundamentals/Stream Processing.md",
+    "1-personal/learning/books/entendendo-algoritmos/capitulo-4/capitulo-4.md",
+    "4-templates/card-template.md",
+    "1-personal/life/routine.md",
+    "2-work/tickets.md",
+    "1-personal/life/todo.md",
+    "Untitled.base",
+    "1-personal/learning/git/git-worktree.md",
+    "1-personal/learning/devops/ci-cd.md",
+    "1-personal/learning/books/entendendo-algoritmos/mapa-mental.canvas",
+    "1-personal/books/entendendo-algoritmos/capitulo-4/Capítulo-04.md",
+    "1-personal/learning/books/codigo-limpo/mapa-mental.canvas",
+    "1-personal/learning/books/codigo-limpo/capitulo-2.md",
+    "1-personal/books/codigo-limpo/mapa_mental.canvas",
+    "1-personal/books/codigo-limpo/Capítulo 2 - Nomes Significativos.md",
+    "1-personal/books/codigo-limpo/Capítulo 1 - Código Limpo.md",
+    "1-personal/books/entendendo-algoritmos/mapa_mental.canvas",
+    "1-personal/learning/books/entendendo-algoritmos/capa.jpg",
+    "1-personal/books/entendendo-algoritmos/Capítulo-04.md",
+    "1-personal/books/livro-entendendo-algoritmos/mapa_mental.canvas",
+    "1-personal/books/livro-entendendo-algoritmos/capa.jpg",
+    "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Excalidraw/Drawing 2025-08-18 10.48.41.excalidraw.md",
-    "Excalidraw",
-    "Untitled.canvas",
-    "Untitled Kanban.md",
-    "2-work/tickets.md",
-    "4-templates/card_template.md",
-    "2-work/jalles/tickets/5139-alteracao-peso-bigbag.md",
-    "2-work/jalles/tickets/5118-falha-sincronizacao-com-sap.md",
-    "2-work/jalles/tickets/5056-trigger-balancas-big-bag.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "4-templates/Untitled.md",
-    "1-personal/Arrays.md",
-    "1-personal/Story Telling.md",
-    "1-personal/Sem título",
-    "1-personal/Sem título.md",
-    "02-work/jalles/tickets/5139-alteracao-peso-bigbag.md~",
-    "1-personal/Livro_EntendendoAlgoritmos/Capitulo_2/Ordenação Por Seleção.md",
-    "1-personal/Livro_EntendendoAlgoritmos/Capitulo_2/Arrays e Listas Encadeadas.md",
-    "1-personal/Livro_EntendendoAlgoritmos/Capitulo_2/ComoFuncionaMemoria.md",
-    "1-personal/Livro_EntendendoAlgoritmos/Capitulo_1/PesquisaBinaria.md",
-    "1-personal/Livro_EntendendoAlgoritmos/Capitulo_1/NotacaoBigO.md",
-    "1-personal/Livro_ModernJavaInAction/Part1_Fundamentals/Stream Processing.md",
-    "1-personal/Livro_ModernJavaInAction/ModernJavainAction.pdf",
-    "1-personal/Livro_ModernJavaInAction/Part1_Fundamentals",
-    "1-personal/Livro_SpringSecurityInAction/SpringSecurityinAction.pdf",
-    "1-personal/Livro_SpringSecurityInAction",
-    "1-personal/Livro_ModernJavaInAction",
-    "Livro_EntendendoAlgoritmos/Capítulo 2 - Ordenação por Seleção.md",
-    "1-personal/Livro_EntendendoAlgoritmos/mapa_mental.canvas",
-    "Livro_EntendendoAlgoritmos/Capítulo 1 - Introdução a algoritmos.md",
-    "1-personal/Livro_CleanCode/Capítulo 2 - Nomes Significativos.md",
-    "1-personal/Livro_CleanCode/Capítulo 1 - Código Limpo.md",
+    "1-personal/livro-entendendo-algoritmos/mapa_mental.canvas",
     "1-personal/Livro_CleanCode/mapa_mental.canvas",
     "1-personal/Livro_CleanCode/capa.png",
-    "1-personal/Livro_EntendendoAlgoritmos/capa.jpg",
+    "1-personal/livro-entendendo-algoritmos/capa.jpg",
     "Livro_CleanCode/Captura de imagem_20250127_204327.png",
-    "1-personal/Livro_CleanCode",
-    "Code/Git.md",
-    "Code/DSA/BigO.md",
     "Pasted image 20241101222950.png"
   ]
 }
