@@ -40,7 +40,16 @@ Como também vale pontuar que como não há nenhuma identificação visual indic
 - Zaqueu testou em QAS e confirmou que nada foi encontrado de fato, pendente testes em PRD
 - Incidente acontece em produção
   - J240250371 - Peso 1200,00
-  - Dúvida video5 -> O operador tenta mudar o peso do bag por um igual ao que já está no anytask, de 1200 para 1200 (operação não autorizada)
+    - Dúvida Video5 -> O operador tenta mudar o peso do bag por um igual ao que já está no anytask, de 1200 para 1200 (operação não autorizada), validar se existe uma validação nesse sentido
+  - J240250370 - Peso 1202,5 -> quer trocar pra 1202, mas dessa vez da o erro a seguir:
+    - Video4 - UnboundLocalError at /app/nova_pesagem/ cannot access local variable 'message' where it is not associated with a value
+      - production/views.py 2462 nova_pesagem - verificar a indentação do return
+- Vídeo Permitindo mudar volume de big bag mesmo sem solicitar repesagem e com envio já ao SAP 
+  - Mas no vídeo ele solicita uma repesagem, verificar a questão da validação do envio ao SAP
+
+
+  - scoppi@jmnetid.com - Samion@2022!
+
 
 ### Links Relacionados
 - [Ticket no Movidesk](https://proxionhelpdesk.movidesk.com/Ticket/Edit/5056)

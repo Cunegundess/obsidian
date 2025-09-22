@@ -11,12 +11,10 @@
             "id": "db75caaca4ec5147",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "1-personal/projects/moneyflow/excalidraw/system-design.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "system-design"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
             }
           }
         ]
@@ -140,13 +138,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1-personal/projects/moneyflow/excalidraw/system-design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de system-design"
+              "title": "Sumário"
             }
           },
           {
@@ -207,8 +204,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d22acf4db023b0ea",
+  "active": "db75caaca4ec5147",
   "lastOpenFiles": [
+    "2-work/secrets.md",
     "1-personal/projects/moneyflow/excalidraw/system-design.md",
     "1-personal/projects/moneyflow/documento-de-requisitos.md",
     "1-personal/projects/moneyflow/assets/system-design.png",
