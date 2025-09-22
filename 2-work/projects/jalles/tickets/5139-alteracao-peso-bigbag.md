@@ -47,8 +47,10 @@ Como também vale pontuar que como não há nenhuma identificação visual indic
 - Vídeo Permitindo mudar volume de big bag mesmo sem solicitar repesagem e com envio já ao SAP 
   - Mas no vídeo ele solicita uma repesagem, verificar a questão da validação do envio ao SAP
 
-
-  - scoppi@jmnetid.com - Samion@2022!
+### Testes locais
+1. Zordem 1000010 - Status em Progresso - Peso / Qtd 1800.000 - Ativo
+2. Zordem 100009 - Status Finalizado - Peso / Qtd 3000.000 - Ativo
+3. Zordem 100008 - Status Novo - Peso / Qtd 600.000 - Inativo
 
 
 ### Links Relacionados
