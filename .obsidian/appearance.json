@@ -3,8 +3,8 @@
   "textFontFamily": "Poppins",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "nativeMenus": true,
-  "cssTheme": "Vesper",
-  "theme": "obsidian",
+  "cssTheme": "",
+  "theme": "moonstone",
   "baseFontSize": 17,
   "baseFontSizeAction": true,
   "accentColor": ""

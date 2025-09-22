@@ -30,6 +30,7 @@ da pesagem do bigbag e bloqueia a execução (como é esperado) e como ele dispa
 Sendo assim, o Anytask está tendo o comportamento esperado e nada de anormal ou bug está ocorrendo, vale uma conversa pra entender melhor o ocorrido
 Como também vale pontuar que como não há nenhuma identificação visual indicando que um lote está disponível para ser pesado. Pode ter levado a um entendimento incorreto entre os operadores
 
+
 ## Passos de Implementação
 - [ ] Passo 1
 
@@ -37,6 +38,9 @@ Como também vale pontuar que como não há nenhuma identificação visual indic
 - [x] Relatar o que foi encontrado no ticket
 - Coloquei para status esperando retorno do cliente e documentei o que foi encontrado no ticket
 - Zaqueu testou em QAS e confirmou que nada foi encontrado de fato, pendente testes em PRD
+- Incidente acontece em produção
+  - J240250371 - Peso 1200,00
+  - Dúvida video5 -> O operador tenta mudar o peso do bag por um igual ao que já está no anytask, de 1200 para 1200 (operação não autorizada)
 
 ### Links Relacionados
 - [Ticket no Movidesk](https://proxionhelpdesk.movidesk.com/Ticket/Edit/5056)

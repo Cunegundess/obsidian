@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e26b3fe3250c52bb",
+        "id": "00f9c987fe7af910",
         "type": "tabs",
         "children": [
           {
-            "id": "aa74722de98c4ed2",
+            "id": "db75caaca4ec5147",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "1-personal/learning/conteudos-youtube.md",
-                "mode": "source",
-                "source": false
+                "file": "1-personal/projects/moneyflow/excalidraw/system-design.md"
               },
-              "icon": "lucide-file",
-              "title": "conteudos-youtube"
+              "icon": "excalidraw-icon",
+              "title": "system-design"
             }
           }
         ]
@@ -44,7 +42,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -142,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "1-personal/projects/moneyflow/excalidraw/system-design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Sumário de system-design"
             }
           },
           {
@@ -173,9 +172,19 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "438e85369ff5241a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -183,27 +192,43 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir importador Markdown": false,
+      "publish:Publicar mudanças": false,
+      "bases:Criar nova base": false,
+      "obsidian-kanban:Criar um novo quadro": false,
       "omnisearch:Omnisearch": false,
-      "bases:Create new base": false,
-      "publish:Publish changes...": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-kanban:Create new board": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "markdown-importer:Open format converter": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aa74722de98c4ed2",
+  "active": "d22acf4db023b0ea",
   "lastOpenFiles": [
+    "1-personal/projects/moneyflow/excalidraw/system-design.md",
+    "1-personal/projects/moneyflow/documento-de-requisitos.md",
+    "1-personal/projects/moneyflow/assets/system-design.png",
+    "4-templates/card-template.md",
+    "1-personal/projects/moneyflow/excalidraw/wireframes.md",
+    "1-personal/projects/moneyflow/excalidraw/devops.md",
+    "1-personal/projects/moneyflow/moneyflow.md",
+    "1-personal/projects/moneyflow/assets/wireframe-dashboard.png",
+    "Pasted image 20250917112351.png",
+    "1-personal/projects/moneyflow/assets/devops.png",
+    "1-personal/projects/moneyflow/excalidraw",
+    "1-personal/projects/moneyflow/assets/Sem título",
+    "1-personal/projects/moneyflow/assets",
+    "1-personal/projects/moneyflow/moneyflow-system-design.excalidraw",
+    "1-personal/projects/moneyflow/Drawing 2025-09-17 11.07.32.excalidraw.md",
+    "1-personal/learning/conteudos-youtube.md",
     "2-work/projects/jalles/tickets/5061-validacao-de-ativacao-de-ordem-retorno-da-moega.md",
     "2-work/projects/jalles/tickets/5139-alteracao-peso-bigbag.md",
     "2-work/projects/jalles/tickets/5118-falha-sincronizacao-com-sap.md",
     "2-work/projects/jalles/tickets/5056-trigger-balancas-big-bag.md",
-    "1-personal/learning/conteudos-youtube.md",
     "2-work/projects/jalles/tickets/5139-alteracao-peso-bigbag.md~",
     "1-personal/learning/dsa/big-o-notation.md",
     "1-personal/learning/books/entendendo-algoritmos/capitulo-2/ordenacao-por-selecao.md",
@@ -215,32 +240,20 @@
     "home/lucas-proxion/Documentos/notes",
     "home/lucas-proxion/Documentos",
     "home/lucas-proxion",
-    "home",
     "1-personal/learning/books/codigo-limpo/capa.png",
     "1-personal/learning/books/codigo-limpo/capitulo-1.md",
     "1-personal/learning/books/entendendo-algoritmos/capitulo-2/como-funciona-memoria.md",
     "1-personal/learning/books/entendendo-algoritmos/capitulo-2/arrays-e-listas-encadeadas.md",
-    "1-personal/learning/books/spring-security-in-action/SpringSecurityinAction.pdf",
-    "1-personal/learning/books/modern-java-in-action/ModernJavainAction.pdf",
     "1-personal/learning/books/modern-java-in-action/Part1_Fundamentals/Stream Processing.md",
     "1-personal/learning/books/entendendo-algoritmos/capitulo-4/capitulo-4.md",
-    "4-templates/card-template.md",
     "1-personal/life/routine.md",
     "2-work/tickets.md",
     "1-personal/life/todo.md",
-    "Untitled.base",
-    "1-personal/learning/git/git-worktree.md",
-    "1-personal/learning/devops/ci-cd.md",
     "1-personal/learning/books/entendendo-algoritmos/mapa-mental.canvas",
-    "1-personal/books/entendendo-algoritmos/capitulo-4/Capítulo-04.md",
     "1-personal/learning/books/codigo-limpo/mapa-mental.canvas",
-    "1-personal/learning/books/codigo-limpo/capitulo-2.md",
     "1-personal/books/codigo-limpo/mapa_mental.canvas",
-    "1-personal/books/codigo-limpo/Capítulo 2 - Nomes Significativos.md",
-    "1-personal/books/codigo-limpo/Capítulo 1 - Código Limpo.md",
     "1-personal/books/entendendo-algoritmos/mapa_mental.canvas",
     "1-personal/learning/books/entendendo-algoritmos/capa.jpg",
-    "1-personal/books/entendendo-algoritmos/Capítulo-04.md",
     "1-personal/books/livro-entendendo-algoritmos/mapa_mental.canvas",
     "1-personal/books/livro-entendendo-algoritmos/capa.jpg",
     "Untitled.canvas",
@@ -250,7 +263,6 @@
     "1-personal/Livro_CleanCode/mapa_mental.canvas",
     "1-personal/Livro_CleanCode/capa.png",
     "1-personal/livro-entendendo-algoritmos/capa.jpg",
-    "Livro_CleanCode/Captura de imagem_20250127_204327.png",
-    "Pasted image 20241101222950.png"
+    "Livro_CleanCode/Captura de imagem_20250127_204327.png"
   ]
 }

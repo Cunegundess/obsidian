@@ -1,6 +1,5 @@
 [
   "oz-image-plugin",
-  "obsidian-excalidraw-plugin",
   "obsidian-kanban",
   "custom-font-loader",
   "obsidian-vimrc-support",
@@ -10,5 +9,7 @@
   "calendar",
   "omnisearch",
   "obsidian-style-settings",
-  "obsidian-relative-line-numbers"
+  "obsidian-relative-line-numbers",
+  "obsidian-excalidraw-plugin",
+  "obsidian-git"
 ]
