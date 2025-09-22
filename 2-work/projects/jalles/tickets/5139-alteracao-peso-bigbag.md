@@ -47,10 +47,15 @@ Como também vale pontuar que como não há nenhuma identificação visual indic
 - Vídeo Permitindo mudar volume de big bag mesmo sem solicitar repesagem e com envio já ao SAP 
   - Mas no vídeo ele solicita uma repesagem, verificar a questão da validação do envio ao SAP
 
-### Testes locais
-1. Zordem 1000010 - Status em Progresso - Peso / Qtd 1800.000 - Ativo
-2. Zordem 100009 - Status Finalizado - Peso / Qtd 3000.000 - Ativo
-3. Zordem 100008 - Status Novo - Peso / Qtd 600.000 - Inativo
+### Testes
+Operação não autorizada quando tentei alterar o peso de um bigbag, lote e ordem recém criados, sem requirir nova pesagem (não sincronizado com sap e não classificado)
+Operação não autorizada quando tentei alterar o peso de um bigbag, lote e ordem recém criados, sem requirir nova pesagem (sincronizado com sap e não classificado)
+Peso alterado quando tentei alterar o peso de um bigbag, lote e ordem recém criados, com solicitação de nova pesagem (não sincronizado com sap e não classificado)
+Operação não autorizada quando tentei alterar o peso de um bigbag, lote e ordem recém criados e pesados, sem solicitação de nova pesagem (não sincronizado com sap e não classificado)
+
+**Observações:** Por algum motivo ao requirir uma nova pesagem, ele não entra como classificado, ainda fica não classificado, mesmo com "Requer nova pesagem Ativa" no admin
+Alterações por pesos iguais não impedem
+
 
 
 ### Links Relacionados
