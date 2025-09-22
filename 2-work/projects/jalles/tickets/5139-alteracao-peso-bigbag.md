@@ -47,6 +47,15 @@ Como também vale pontuar que como não há nenhuma identificação visual indic
 - Vídeo Permitindo mudar volume de big bag mesmo sem solicitar repesagem e com envio já ao SAP 
   - Mas no vídeo ele solicita uma repesagem, verificar a questão da validação do envio ao SAP
 
+
+**Pensamentos:** Aparentemente não existe um problema técnico do Anytask, as suspeitas se relacionam ao fluxo de processo dos operadores, assim levantando várias indagações, por exemplo,
+o Saymon comentou que pelos vídeos eles não estão na área de ENVASE. Ou seja, na teoria um bigbag só pode ser repesado quando ele foi apontado
+1. O bigbag foi apontado? Ele está na área de repesagem (ENVASE)
+
+Uma alternativa de solução é criar validações com objetivo de impedir o máximo possível o mal uso do operador
+
+só pode repesar um bag que ainda não foi apontado, e ele não foi apontado quando está na área do ENVASE 
+
 ### Testes
 Operação não autorizada quando tentei alterar o peso de um bigbag, lote e ordem recém criados, sem requirir nova pesagem (não sincronizado com sap e não classificado)
 Operação não autorizada quando tentei alterar o peso de um bigbag, lote e ordem recém criados, sem requirir nova pesagem (sincronizado com sap e não classificado)
@@ -55,8 +64,6 @@ Operação não autorizada quando tentei alterar o peso de um bigbag, lote e ord
 
 **Observações:** Por algum motivo ao requirir uma nova pesagem, ele não entra como classificado, ainda fica não classificado, mesmo com "Requer nova pesagem Ativa" no admin
 Alterações por pesos iguais não impedem
-
-
 
 ### Links Relacionados
 - [Ticket no Movidesk](https://proxionhelpdesk.movidesk.com/Ticket/Edit/5056)
