@@ -1,11 +1,13 @@
 {
-  "interfaceFontFamily": "Poppins",
-  "textFontFamily": "Poppins",
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Calibri",
   "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
   "nativeMenus": true,
-  "cssTheme": "",
-  "theme": "moonstone",
-  "baseFontSize": 17,
+  "cssTheme": "Baseline",
+  "theme": "obsidian",
+  "baseFontSize": 20,
   "baseFontSizeAction": true,
-  "accentColor": ""
+  "accentColor": "",
+  "showViewHeader": true,
+  "showRibbon": true
 }
