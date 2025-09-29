@@ -207,7 +207,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 344.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,7 +227,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "438e85369ff5241a",
+  "active": "4d28603c9f759bef",
   "lastOpenFiles": [
     "1-personal/learning/books/fluent-python/part-1-data-structures/chapter-1-the-python-data-model.md",
     "1-personal/learning/books/fluent-python/fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho).pdf",
