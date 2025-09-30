@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-work/secrets.md",
+                "file": "2-work/zscaller.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "secrets"
+              "title": "zscaller"
             }
           }
         ]
@@ -229,11 +229,12 @@
   },
   "active": "4d28603c9f759bef",
   "lastOpenFiles": [
+    "2-work/secrets.md",
+    "2-work/zscaller.md",
     "1-personal/learning/books/fluent-python/part-1-data-structures/chapter-1-the-python-data-model.md",
     "1-personal/learning/books/fluent-python/fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho).pdf",
     "1-personal/learning/books/fluent-python/part-1-data-structures",
     "1-personal/learning/books/fluent-python",
-    "2-work/secrets.md",
     "1-personal/projects/moneyflow/documento-de-requisitos.md",
     "1-personal/life/routine.md",
     "2-work/tickets.md",
