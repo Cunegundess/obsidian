@@ -1,0 +1,14 @@
+* Descrição
+Atributo ~expiration_date~ (data de validade) dos Lotes de fardos e sacas estão sendo computados com uma data maior, por exemplo, operador inseriu dia 1 e o anytask computou dia 2
+
+#+begin_quote
+*Zaqueu* 
+Estamos com problema com relação a data de validade inputada nos lotes de fardos e sacas.
+Este lote por exemplo está com o big bag ativo na ordem, porém não tem a data de expiração;
+Dentro da ordem temos o lote do BAG J152250582 e a data do mesmo é 01/06/2029. Porém podemos ver que o lote puxou a data com 1 dia a mais.
+Lote com data de expiração diferente do lote do bag selecionado na ordem.
+#+end_quote
+
+* Suspeitas
+Suspeito que está ocorrendo algum tratamento nesse atributo fazendo com o que esse comportamento esteja sendo disparado
+O bug ocorre pois quando é apontado com 21h ou mais, ele conta mais 3h por causa da diferença de BRT para UTC, assim considerando o dia seguinte

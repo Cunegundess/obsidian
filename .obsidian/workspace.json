@@ -13,30 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2-work/zscaller.md",
+                "file": "1-personal/learning/tcc/guia-estudos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "zscaller"
-            }
-          }
-        ]
-      },
-      {
-        "id": "319310e880ef4130",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6470dcb35a0615b6",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "1-personal/learning/books/fluent-python/fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho).pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho)"
+              "title": "guia-estudos"
             }
           }
         ]
@@ -198,8 +180,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -207,8 +189,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5,
-    "collapsed": true
+    "width": 344.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,10 +210,11 @@
   },
   "active": "4d28603c9f759bef",
   "lastOpenFiles": [
-    "2-work/secrets.md",
-    "2-work/zscaller.md",
-    "1-personal/learning/books/fluent-python/part-1-data-structures/chapter-1-the-python-data-model.md",
     "1-personal/learning/books/fluent-python/fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho).pdf",
+    "1-personal/learning/tcc/guia-estudos.md",
+    "2-work/zscaller.md",
+    "2-work/secrets.md",
+    "1-personal/learning/books/fluent-python/part-1-data-structures/chapter-1-the-python-data-model.md",
     "1-personal/learning/books/fluent-python/part-1-data-structures",
     "1-personal/learning/books/fluent-python",
     "1-personal/projects/moneyflow/documento-de-requisitos.md",
@@ -267,8 +249,6 @@
     "2-work/projects/jalles/tickets/5056-trigger-balancas-big-bag.md",
     "1-personal/learning/dsa/big-o-notation.md",
     "1-personal/learning/books/entendendo-algoritmos/capitulo-2/ordenacao-por-selecao.md",
-    "1-personal/learning/books/entendendo-algoritmos/capitulo-1/notacao-big-o.md",
-    "1-personal/learning/books/entendendo-algoritmos/capitulo-1/pesquisa-binaria.md",
     "1-personal/learning/books/codigo-limpo/capa.png",
     "1-personal/learning/books/entendendo-algoritmos/mapa-mental.canvas",
     "1-personal/learning/books/codigo-limpo/mapa-mental.canvas",
