@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-personal/learning/tcc/guia-estudos.md",
+                "file": "2-work/secrets.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "guia-estudos"
+              "title": "secrets"
             }
           }
         ]
@@ -210,9 +210,9 @@
   },
   "active": "4d28603c9f759bef",
   "lastOpenFiles": [
-    "1-personal/learning/books/fluent-python/fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho).pdf",
-    "1-personal/learning/tcc/guia-estudos.md",
     "2-work/zscaller.md",
+    "1-personal/learning/tcc/guia-estudos.md",
+    "1-personal/learning/books/fluent-python/fluent-python-clear-concise-and-effective-programming-author(luciano-ramalho).pdf",
     "2-work/secrets.md",
     "1-personal/learning/books/fluent-python/part-1-data-structures/chapter-1-the-python-data-model.md",
     "1-personal/learning/books/fluent-python/part-1-data-structures",
