@@ -1,0 +1,20 @@
+* DONE Corrigir o expiration.month para mostrar dois digitos no mes
+  :PROPERTIES: Ticket-5666
+  :CREATED: [2026-05-19]
+  :END:
+
+* DONE Checar se a data de criação dos lotes estão corretas para testes
+  :PROPERTIES: Ticket-5604
+  :CREATED: [2026-05-19]
+  :END:
+
+* DONE Atualizar Nexus e PRD com a correção dos 5%
+  :PROPERTIES: Ticket-5834
+  :CREATED: [2026-05-19]
+  :END:
+
+* TODO Tirar o acesso do pessoal
+  :PROPERTIES: Ticket-5836
+  :CREATED: [2026-05-19]
+  :END:
+

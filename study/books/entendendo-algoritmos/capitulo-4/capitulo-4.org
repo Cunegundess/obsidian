@@ -1,0 +1,220 @@
+* Capítulo 04
+:PROPERTIES:
+:CUSTOM_ID: capítulo-04
+:END:
+* Dividir para Conquistar (DC)
+:PROPERTIES:
+:CUSTOM_ID: dividir-para-conquistar-dc
+:END:
+Técnica “Dividir para conquistar (DC)” é uma técnica recursiva. Assim,
+para resolver um problema utilizando DC, você deve seguir os seguintes
+passos: - Descubra o caso base, que deve ser o caso mais simples
+possível - Divida ou diminua o seu problema até que ele se torne o caso
+base
+
+O algoritmo DC não é um simples algoritmo que você aplica em um
+problema, mas sim uma maneira de pensar sobre o problema.
+
+*Exemplo: Você tem um array de números [2, 4, 6] e deve somar todos os
+números e retornar o valor total*
+
+Isso pode ser feito com um loop
+
+#+begin_src python
+def soma(lista):
+    total = 0
+    for num in lista:
+        total += num
+    return total
+#+end_src
+
+Mas como isso poderia ser feito com uma função recursiva?
+
+*Passo 1: Descubra o caso base*
+
+Qual o array mais simples que você pode obter? Pense sobre o caso mais
+simples, se você tiver um array com 0 ou com 1 elemento, será muito
+simples calcular a soma
+
+#+begin_src python
+[ ] → 0 elemento = soma é 0
+[7] → 1 elemento = soma é 7
+#+end_src
+
+*Passo 2: Você deve chegar mais perto de um array vazio a cada recursão*
+
+Como pode reduzir o tamanho do seu problema? Esta é uma alternativa:
+
+#+begin_src python
+soma([2, 4, 6]) = 12
+#+end_src
+
+a soma deste array é igual a isto
+
+#+begin_src python
+2 + soma([4, 6]) = 2 + 10 = 12
+#+end_src
+
+Em ambos os casos o resultado é 12. Porém, na segunda versão, você está
+usando um array menor na função, ou seja, você está diminuindo o
+problema!
+
+*A sua função soma poderia funcionar assim:*
+
+#+begin_src mermaid
+graph TD
+    A[Pegue uma lista]
+    B[Se a lista estiver vazia, retorne 0]
+    C[Caso contrário, a soma  total será o primeiro número da lista + a soma do restante da lista]
+
+    A --> B
+    A --> C
+#+end_src
+
+*Na prática:*
+
+#+begin_src mermaid
+graph TD
+    A["Ambas as representações são iguais"]
+    B["soma([2, 4, 6])"]
+    C["2 + soma([4, 6])"]
+    D["4 + soma([6])"]
+    E["Caso Base! soma([6]) é 6"]
+    F["4 + 6 = 10 -> 2 + 10 = 12 -> 12"]
+
+    A --> B
+    A --> C
+    B --> C
+    C --> D
+    E --> D
+    E --> F
+#+end_src
+
+*No código:*
+
+#+begin_src python
+def soma(array: list) -> int:
+    if len(array) == 0:
+        return 0
+
+    if len(array) == 1:
+        return array[0]
+
+    first_number = array.pop(0)
+    
+    # Sem recursividade
+    # total = 0
+    # for n in array:
+    #     total += n
+    
+    # Utilizando recursividade
+    return first_number + soma(array) 
+#+end_src
+
+#+begin_html
+  <aside>
+#+end_html
+
+💡
+
+Quando estiver escrevendo uma função de recursão que envolva um array, o
+caso base será, muitas vezes, um array vazio ou um array com apenas um
+elemento
+
+#+begin_html
+  </aside>
+#+end_html
+
+* Quicksort
+:PROPERTIES:
+:CUSTOM_ID: quicksort
+:END:
+Quicksort é um algoritmo de ordenação, muito mais rápido que a ordenação
+por seleção e é muito utilizado, por exemplo, a biblioteca padrão do C
+tem uma função chamada =qsort= que é uma implementação do quicksort, e
+ele também utiliza a estratégia DC
+
+*Vamos usar o quicksort para ordenar um array:*
+
+Qual é o array mais simples que um algoritmo de ordenação pode ordenar?
+(Caso Base). Arrays vazios ou com 1 elemento não precisam nem ser
+ordenados, então eles serão o caso base
+
+#+begin_src python
+def quicksort(array):
+    if len(array) < 2:
+        return array
+#+end_src
+
+Um array com dois elementos também é muito simples de ordenar, *e um
+array com três elementos?.* Lembre-se, você está usando DC, sendo assim,
+quer quebrar esse array até que você chegue no caso base.
+
+#+begin_src python
+[33, 15, 10]
+#+end_src
+
+Portanto o funcionamento do quicksort segue esta lógica → primeiro,
+escolha um elemento dentro do array, este elemento será o =pivô= ,
+assim, encontre os elementos que são menores do que o pivô e também os
+que são maiores
+
+#+begin_src python
+# menores | pivô | maiores
+[15, 10] | [33] | []
+#+end_src
+
+Isso é chamado de particionamento. Os dois subarrays não estão
+ordenados, apenas particionados. Porém, se eles estivessem ordenados, a
+ordenação do array contendo todos os elementos seria simples
+
+#+begin_src python
+# menores | pivô | maiores
+[10, 15] | [33] | []
+#+end_src
+
+Caso os subarrays estejam ordenados, poderá combiná-los desta forma →
+*array esquerdo + pivô + array direito*. Consequentemente, terá um array
+ordenado, neste caso, temos [10, 15] + [33] + [ ] = [10, 15, 30], que é
+um array ordenado
+
+*Como você consegue ordenar os subarrays?* O caso base do quicksort
+consegue ordenar arrays de dois elementos (o subarray esquerdo) e também
+arrays vazios (o subarray direito). Assim, se utilizar o quicksort em
+ambos os subarrays e então combinar os resultados, terá um array
+ordenado! *Isso funcionará para qualquer pivô*
+
+#+begin_src python
+quicksort([15, 10]) + [33] + quicksort([])
+#+end_src
+
+*Aqui está o código exemplo do quicksort*
+
+#+begin_src python
+def quicksort(array):
+    if len(array) < 2:
+        return array
+    
+    # Utilzando o primeiro item como pivo   
+    pivo = array[0]
+    menores = [el for el in array[1:] if el < pivo]
+    maiores = [el for el in array[1:] if el > pivo]
+    
+    return quicksort(menores) + [pivo] + quicksort(maiores)
+#+end_src
+
+#+begin_html
+  <aside>
+#+end_html
+
+💡
+
+Utilizei o debug pra ver melhor o funcionamento desse algoritmo e notei
+como as call stacks se comportam a cada chamada recursiva que ele dá,
+cada chamada contém um array pré ordenado que é ordenado conforme as
+iterações e depois é montado de volta quando desempilha as chamadas,
+cada uma salva seu próprio pivô
+
+#+begin_html
+  </aside>
+#+end_html

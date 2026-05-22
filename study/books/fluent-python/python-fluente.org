@@ -1,0 +1,44 @@
+* python-fluente
+:PROPERTIES:
+:CUSTOM_ID: python-fluente
+:END:
+
+#+begin_quote
+Eis um plano: se uma pessoa usar um recurso que você não entende,
+mate-a. É mais fácil que aprender algo novo, e em pouco tempos os únicos
+programadores sobreviventes usarão apenas um subconjunto minúsculo e
+fácil de entender de Python 0.9.6 /Tim Peters, lendário colaborador do
+CPython e autor do Zen de Python/
+#+end_quote
+
+#+begin_quote
+Abstração Prematura é tão ruim quanto otimização prematura.
+#+end_quote
+
+* Parte 1 - Estuturas de dados
+:PROPERTIES:
+:CUSTOM_ID: parte-1---estuturas-de-dados
+:END:
+** Capítulo 1. O modelo de dados de Python
+:PROPERTIES:
+:CUSTOM_ID: capítulo-1.-o-modelo-de-dados-de-python
+:END:
+- É a API que usamos para fazer nossos objetos lidarem bem com os
+  recursos mais poderosos e característicos da linguagem
+
+O interpretador de Python invoca métodos especiais para realizar
+operações básicas sobre os objetos, muitas vezes acionadas por uma
+sintaxe especial (dunder methods). Por exemplo, a sintaxe =obj[key]=
+está amparada no método especial =__getitem__=. Para resolver
+=my_collection[key]=, o interpretador chama
+=my_collection.__getitem__(key)=
+
+#+begin_quote
+"É basicamente um estilo de mentalidade que visa aproveitar o máximo as
+funcionalidades da linguagem ao invés de criarmos nós mesmos"
+#+end_quote
+
+** 1.2. Um baralho pythônico
+:PROPERTIES:
+:CUSTOM_ID: um-baralho-pythônico
+:END:

@@ -1,0 +1,64 @@
+* Conteúdos no youtube para estudar
+:PROPERTIES:
+:CUSTOM_ID: conteúdos-no-youtube-para-estudar
+:END:
+** Fernanda Kipper
+:PROPERTIES:
+:CUSTOM_ID: fernanda-kipper
+:END:
+1. [] [[https://www.youtube.com/watch?v=gd_cUmwzgEM][APRENDA NGINX DO
+   ZERO | Curso de NGINX em 1 HORA]]
+2. [] [[https://www.youtube.com/watch?v=VJHb-MONfi8][API REST x GRAPHQL
+   ​| Entendendo NA PRÁTICA qual padrão é melhor usar]]
+
+** Augusto Galego
+:PROPERTIES:
+:CUSTOM_ID: augusto-galego
+:END:
+1. [] [[https://www.youtube.com/watch?v=2yqHlJ2HbTo][Princípios SOLID |
+   Código Limpo]]
+2. [] [[https://youtu.be/0B20k31Gyq0?si=VRWQYe2hn5_Y_XCa][CQRS e EVENT
+   SOURCING | Design de Software Maduro]]
+3. [] [[https://www.youtube.com/watch?v=UaVYGhFo56M][Problema "N+1" |
+   TODOS os devs precisam conhecer]]
+4. [] [[https://www.youtube.com/watch?v=IYr0dSbu-VQ][Você NÃO SABE o que
+   é Orientação a Objetos]]
+5. [] [[https://www.youtube.com/watch?v=r-tiD2MYnWE&t=4s][Cache
+   explicado - O que é e como funciona cache?]]
+6. [] [[https://www.youtube.com/watch?v=AvgGHy2-b8Y&t=1062s][0 a prod
+   AWS ( Serverless, Lamda, Dynamo, API)]]
+7. [] [[https://www.youtube.com/watch?v=nOZTyuhCU2k&t=1545s][O básico
+   que você precisa saber de AWS]]
+8. [] [[https://www.youtube.com/watch?v=YNHKO_74sLU][Todo DEV precisa
+   entender isso: IDEMPOTÊNCIA]]
+9. [] [[https://www.youtube.com/watch?v=74RLgpAV6LQ&t=109s][Concorrência
+   é DIFERENTE de Paralelismo!]]
+10. [] [[https://www.youtube.com/watch?v=5Zmc6f420rg&t=528s][Mentiram
+    pra você sobre recursão...]]
+11. [] [[https://www.youtube.com/watch?v=ooJjxNsQnK4][Quando usar
+    Monolitos vs Microserviços]]
+12. [] [[https://www.youtube.com/watch?v=mlzPJlQeqBM][Rate Limiter |
+    Explicação Completa]]
+13. [] [[https://www.youtube.com/watch?v=oi3eqnBcsJE][Tudo que você
+    precisa saber sobre GIT]]
+14. [] [[https://www.youtube.com/watch?v=dsarexwqcjc&t=1s][REST vs
+    GraphQL | Quando usar qual?]]
+15. [] [[https://www.youtube.com/watch?v=HsDUsdYlup0][O que é REST]]
+
+** Rocketseat
+:PROPERTIES:
+:CUSTOM_ID: rocketseat
+:END:
+1. [] [[https://www.youtube.com/watch?v=eftbQXnR4Y0][Todo dev back-end
+   pleno PRECISA conhecer esses 3 conceitos! (fundamentos de
+   microsserviços)]]
+
+** Maria Lazara
+:PROPERTIES:
+:CUSTOM_ID: maria-lazara
+:END:
+1. [] [[https://youtu.be/UEoxMU_l2xs?si=UN7z-nQ9jV3yXSDg][Seu Primeiro
+   Projeto Prático DevOps COMPLETO: Docker, AWS, Terraform e CI/CD!]]
+2. [] [[https://www.youtube.com/watch?v=G4sAlfb0gFg][Projeto Prático
+   DevOps COMPLETO: Automatizando infraestrutura com Terraform + AWS
+   (Part 2)]]

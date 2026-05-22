@@ -1,0 +1,181 @@
+* Python Data Model
+:PROPERTIES:
+:CUSTOM_ID: python-data-model
+:END:
+** Premature abstraction
+:PROPERTIES:
+:CUSTOM_ID: premature-abstraction
+:END:
+
+#+begin_quote
+Premature abstraction is as bad as premature optimization
+#+end_quote
+
+** REPL
+:PROPERTIES:
+:CUSTOM_ID: repl
+:END:
+REPL: read-eval-print loop
+
+[[https://github.com/fluentpython/example-code-2e][Code Repository -
+GitHub]]
+
+** Python Data Model
+:PROPERTIES:
+:CUSTOM_ID: python-data-model-1
+:END:
+It is the API that are used to make the objects play well with the most
+idiomatic language features (/Pythonic/).
+
+You can think of the data model as a description of Python as a
+framework. It formalizes the interfaces of the building blocks of the
+language itself.
+
+#+begin_quote
+*Google NotebookLM* O modelo de Dados Python é a API que se utiliza para
+que os objetos definidos pelo usuário interajam bem com os recurso
+idiomáticos da linguagem
+#+end_quote
+
+When using a framework, we spend a lot of time coding methods that are
+called by the framework. The same happens when we leverage the Python
+Data Model to build new classes. The Python interpreter invokes special
+methods to perform basic object operations, often triggered by special
+syntax. The special method names are always written with leading and
+trailing double underscores.
+
+#+begin_quote
+*Google NotebookLM* A essência de trabalhar com o Modelo de Dados é
+implementar métodos especiais (também chamados de /dunder methods/). O
+interpretador Python invoca esses métodos especiais para executar
+operações básicas, que são frequentemente acionadas por sintaxes
+especiais
+#+end_quote
+
+We implement special methods when we want our objects to support and
+interact with fundamental language constructs such as:
+
+- Collections
+- Attribute Access\\
+- Iteration (including asynchronous)
+- Operator overloading
+- Function and method invocation
+- String representation and formatting
+- Asynchronous programming
+- Object creation and destruction
+- Managed contexts
+
+#+begin_quote
+*Google NotebookLM* Ao implementar métodos especiais, seus objetos se
+comportam como os tipos embutidos, permitindo um estilo de codificação
+expressivo que é considerado Pythonic. Duas vantagens principais são:
+
+1. /Nomes Padrão:/ Os usuários das suas classes não precisam memorizar
+   nomes de métodos arbitrários para operações padrão
+2. /Aproveitamento da Biblioteca Padrão:/ Torna-se mais fácil tirar
+   proveito da rica biblioteca padrão do Python, evitando a reinvenção
+   da roda
+#+end_quote
+
+--------------
+
+#+begin_quote
+*NotebookLM* /"O que é o Modelo de Dados do Python? Porque usar e como
+usar corretamente? Pergunto pois sempre programei em python mas
+raramente ou nunca uso dunder methods, sempre criei funções e classes da
+maneira convencional."/
+
+O modelo de dados do Python é o alicerce que permite que classes
+personalizadas se integrem perfeitamente com recursos nativos da
+linguagem, algo que se torna muito mais relevante ao construir
+bibliotecas ou frameworks.
+
+A chave para a consistência e o comportamento uniforme de todos os tipos
+de objetos em Python reside nos métodos especiais.
+
+Ao implementar dunder methods (métodos especiais), você permite que seus
+objetos se comportem como os tipos internos do Python, o que leva a um
+estilo de codificação expressivo que a comunidade considera Pythonic.
+
+Usar esses métodos e o PDM (Python Data Model) traz vantagens
+significativas: 1. Consistência e Previsibilidade 2. APIs intuitivas 3.
+Aproveitamento da Biblioteca Padrão 4. Funcionalidades Nativas
+
+O uso correto do PDM e dos métodos especiais segue convenções rígidas
+estabelecidas pelo design da linguagem:
+
+1. *Chamada de métodos*
+   - Não chame diretamente: Os métodos especiais são feitos para serem
+     chamados pelo interpretador Python e não por você. Você não deve
+     escrever =my_object.__len__()=. Em vez disso, você escreve
+     =len(my_object)= e o Python chama o método =__len__= que você
+     implementou.
+
+   - Usar funções embutidas: Se precisar invocar um método especial,
+     geralmente é melhor chamar a função embutida relacionada (ex:
+     =len, iter, str, abs=).
+
+   - A exceção comum: O único método especial que frequentemente é
+     chamado diretamente pelo código do usuário é o =__init__=,
+     geralmente para invocar o inicializador da superclasse.
+
+2. *Implementação de Operadores:* Ao implementar operadores como
+   =+, *, -= deve-se seguir o princípio de sempre retornar um novo
+   objeto e não modificar o receptor =self=.
+   - Infix Operators (ex: =__add__=): Devem criar e retornar novos
+     objetos, e não tocar nos operandos.
+
+   - Inflexibilidade de Tipo (NotImplemented): Se um método especial de
+     operador infix não conseguir retornar um resultado válido devido a
+     incompatibilidade de tipo (por exemplo, tentando somar seu objeto
+     =Vector= com uma string), ele deve retornar o valor singleton
+     especial =NotImplemented= e não levantar um =TypeError=. Retornar
+     um =NotImplemented= permite que o interpretador tente a versão
+     reversa do operador (ex: =__radd__=).
+#+end_quote
+
+** Um baralho pythônico
+:PROPERTIES:
+:CUSTOM_ID: um-baralho-pythônico
+:END:
+O seguinte exemplo é simples, mas demonstra as possibilidades que se
+abrem com a implementação de apenas dois métodos especiais, *getitem* e
+*len*
+
+#+begin_src python
+import collections
+
+Card = collections.namedtuple("Card", ["rank", "suit"])
+
+class FrenchDeck:
+    ranks = [str(n) for n in range(2, 11)] + list("JQKA")
+    suits = 'spades diamonds clubs hearts'.split()
+
+    def __init__(self):
+        self._cards = [Card(rank, suit) for suit in self.suits
+                                        for rank in self.ranks]
+
+    def __len__(self):
+        return len(self._cards)
+
+    def __getitem__(self, position):
+        return self._cards[position]
+#+end_src
+
+A primeira coisa a notar é o uso de collections.namedtuple para
+construir uma classe simples representando cartas individuais. Usamos
+namedtuple para criar classes de objetos que são apenas um agrupamento
+de atributos, sem métodos próprios, como um registro de banco de dados A
+parte central desse exemplo é a classe =FrenchDeck=. Primeiro, como
+qualquer coleção padrão de Python, uma instância dela responde à função
+=len()=, devolvendo o número de cartas naquele baralho Ler cartas
+específicas do baralho é facil, graças ao método =__getitem__=. Por
+exemplo, a primeira e a última carta Deveriamos criar um método para
+obter uma carta aleatória? Não é necessário. Python já tem uma função
+que devolve um item aleatório de uma sequência: =random.choice=
+
+Acabamos de ver duas vantagens de usar os métodos especiais no contexto
+do Modelo de Dados de Python - Os usuários de suas classes não precisam
+memorizar nomes arbitrários de métodos para operações comuns - É mais
+fácil de aproveitar a rica biblioteca padrão de Python e evitar
+reinventar a roda

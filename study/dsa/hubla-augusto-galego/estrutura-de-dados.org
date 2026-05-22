@@ -1,0 +1,67 @@
+#+title: Estrutura de Dados
+
+* Big O Notation
+Big O Notation se refere a como um algoritmo escala com o tamanho do input que ele recebe, e não necessariamente o quão rápido ele performa. Se trata mais sobre escalabilidade do que performance.
+Essa detonação também pode ser usada para medir a complexidade temporal de um algoritmo e também a complexidade espacial do mesmo. A complexidade temporal diz respeito ao tempo de execução - runtime e a complexidade espacial diz respeito ao quanto de espaço adicional a gente precisará alocar
+
+*Sempre considerar o pior caso*
+
+** Principais notações de Big O
+- *O(1):* Se refere a tempo constante ou memória constante, ou seja, independente do tamanho do array o tempo sempre vai ser a mesmo ou a alocação em memória sempre vai ser a mesma
+- *O(LOG N):* Conforme o input aumenta exponencialmente, o tempo de execução aumenta linearmente, ou seja, o tempo de execução não aumenta na mesma medida em que se aumenta o tamanho do input
+- *O(N):* O tempo de execução aumenta junto com o tamanho do input, sempre igual
+- *O(N LOG N):* Mais presente em algoritmos de sorting e divide and conquer, ou seja, ela performa o input em *O(N)* porém opera ele em *O(LOG N)*
+- *O(N²):* Basicamente esta presente em loops alinhados que percorrem o mesmo array mais de uma vez
+
+
+* Arrays e Linked Lists
+Arrays são espaços contíguos na memória, onde é armazenado um determinado espaço na memória dependendo da quantidade de elementos que queira armazenar. Enquanto isso, Linked Lists não são contíguos
+na memória, ou seja, é armazenado ponteiros que indicam aonde seus elementos estão sendo armazenados na memória
+
+- Linked Lists podem ser Singly Linked List (lista ligada simples) ou Doubly Linked List (lista duplamente ligada)
+
+#+begin_src python
+(1) -> (2) -> (3) # Singly Linked List
+(1) <--> (2) <--> (3) # Doubly Linked List
+#+end_src
+
+* Queue e Dequeue
+Queues e deques são estruturas de fila frequentemente implementadas com linked lists.
+Uma queue normalmente segue o modelo FIFO (First In, First Out), onde o primeiro elemento inserido é o primeiro a ser removido, e pode ser implementada usando uma singly linked list.
+
+Já uma deque (double-ended queue) permite inserções e remoções em ambas as extremidades da estrutura, sendo comum sua implementação com uma doubly linked list, devido ao acesso eficiente tanto ao próximo quanto ao elemento anterior.
+#+begin_src python
+from queue import Queue
+from collections import deque
+
+queue = Queue()
+
+queue.put(1)
+queue.put(2)
+queue.put(3)
+
+print(queue.get()) # Imprimirá o elemento 1
+print(queue.get()) # Imprimirá o elemento 2
+#+end_src
+
+#+RESULTS:
+: None
+
+* HashMap
+Estrutura de dados que armazena um conjunto chave-valor onde inserir, remover ou buscar um item geralmente será O(1) pois já se sabe onde estará aquele determinado item em memória, porém também poderá ser O(N) se houver muitos valores no mesmo espaço de memória (colisões)
+
+O Load Factor dessa estrutura determina a probabilidade de colisões que poderá acontecer, e quando ocorre uma colisão geralmente (dependendo da linguagem) será criada uma sub-estrutura de dados para armazenar esses valores, seja em um array ou linked list
+
+Um HashMap praticamente terá um array e uma hash function que utiliza SHA ou MD5 para encriptar, e quando houver colisão, irá lidar com uma nova sub-estrutura de dados
+
+* Stacks (Pilha)
+Stacks respeitam o príncipio LIFO (Last In First Out), enquanto Queues respeitam FIFO (First In First Out) e removem o primeiro elemente inserido, elas removem o último item inserido
+#+begin_src  python
+Queue (FIFO):
+[1, 2, 3]
+pop -> 1
+
+Stack (LIFO):
+[1, 2, 3]
+pop -> 3
+#+end_src

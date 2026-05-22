@@ -1,0 +1,10 @@
+* Materiais de Referências
+:PROPERTIES:
+:CUSTOM_ID: materiais-de-referências
+:END:
+- [[https://github.com/HackSoftware/Django-Styleguide][Django
+  Styleguide]]
+- [[https://www.reddit.com/r/django/comments/1my4oap/best_practices_for_structuring_django_projects/][Best
+  Practices for Structuring Django Projects]]
+- [[https://spookylukey.github.io/django-views-the-right-way/][Django
+  Views - The Right Way]]

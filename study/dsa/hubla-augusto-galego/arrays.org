@@ -1,0 +1,153 @@
+#+title: Arrays
+
+* Arrays Estáticos vs Arrays Dinâmicos
+
+| *Arrays Estáticos*                      | *Arrays Dinâmicos*            |
+| ------------------------------------- | --------------------------- |
+| Tamanho Fixo / Tempo de Compilaçã     | Tamanho Variável            |
+| Alocação em Memória Stack ou Estática | Alocação em Memória Heap    |
+| Não muda de tamanho                   | Aumenta e Diminui           |
+| Ganho de Performance                  | Ganho de Flexibilidade      |
+| Menos Operações                       | Redimensionar O(n)          |
+| Segurança (Menos memory leaks)        | Fragmentação / memory leaks |
+
+* Cache
+Existem níveis diferentes de cache e são mais rápidos de se acessar do que memórias ram. O uso de arrays são muito úteis para esse conceito devido ao seu espaço temporal e espacial
+
+* Mapas de Frequência
+Técnica muito utilizada em strings pois consiste em utilizar hashmaps para contabilizar a frequência em que um determinado elemento é encontrado nessa string
+- Funciona especialmente para Anagramas, Palindromos, Algoritmos de Compressão, Criptografia, Slide Window
+
+#+begin_src python
+def frequency_map(string: str) -> dict:
+   frequency = {} 
+
+   for ch in string:
+      if ch in frequency:
+         frequency[ch] += 1
+      else:
+         frequency[ch] = 1
+
+   return frequency
+
+freq = frequency_map("banana") # {"a": 3, "b": 1, "n": 2}
+#+end_src
+
+#+RESULTS:
+: None
+
+* Two Pointers
+Técnica que inicializa dois pointeiros, um geralmente no ínicio e outro no fim de um array, e os manipula a fim de evitar alocar espaços adicionais em memória
+
+*Exemplo de Implementação*
+#+begin_src python
+def reverseWords(string):
+    '''Leetcode de Two Pointer'''
+    response = ''
+    left_pointer, right_pointer = 0, 0 # Inicializando ambos na posição 0
+
+    while right_pointer < len(string): # Enquanto o último ponteiro não passar do final da string
+        if string[right_pointer] != ' ': # Caso encontre um espaço em branco
+            right_pointer += 1 # Mover o último ponteiro para além do espaço em branco
+        else:
+            response += string[left_pointer:right_pointer+1][::-1] # Seleciona a palavra entre o primeiro ponteiro e último ponteiro e inverte essa palavra
+            right_pointer += 1 # Move o último ponteiro
+            left_pointer = right_pointer # Move o primeiro ponteiro para a mesma posição do último
+
+    response += ' '
+    response += string[left_pointer:right_pointer + 2][::-1]
+    return response[1:]
+#+end_src
+
+* Binary Search
+Algoritmo de busca que consiste em dividir um array ao meio em cada iteração e eliminar a parte que não será utilizada na busca, funciona exclusivamente em arrays ordenados. Seu tempo de execução é O(Log N) e complexidade espacial é O(1)
+
+#+begin_src python
+def binary_search(nums, n):
+    low = 0
+    high = len(nums)
+    steps = 0
+    
+    while low < high:
+        steps += 1
+        
+    mid = int((low + high) / 2)
+
+    if nums(mid) == n:
+        print("step: ", steps)
+        return mid
+    elif nums(mid) < n:
+        low = mid + 1
+    else:
+        high = mid
+        
+    return -1
+#+end_src
+
+#+RESULTS:
+: None
+
+* Sliding Window
+Para indentificar um problema em que vai usar uma sliding window, deve-ser notar que a solução do mesmo se baseia em operar em sub-arrays ou sub-strings dentro de um array ou string em determinada condição
+#+begin_src python
+def maximumLengthSubstring(self, s: str) -> int:
+    l, r = 0, 0
+    _max = 1
+    counter = {}
+
+    counter[s[0]] = 1
+
+    while r < len(s) -1:
+        r+=1
+        if counter.get(s[r]):
+            counter[s[r]] += 1
+        else:
+            counter[s[r]] = 1
+
+        while counter[s[r]] == 3:
+            counter[s[l]] -= 1
+            l += 1
+        _max = max(_max, r-l+1)
+
+    return _max
+#+end_src
+
+* Exponencial Search
+Possui as mesmas complexidades temporais e exponenciais de uma binary search pois usa binary search como parte da busca
+Exponencial Search move os dois ponteiros exponencialmente em um array ordenado até achar o sub-array em que se encontre o target, e assim utiliza uma binary search para percorrer esse sub-array
+
+#+begin_src python
+def binary_search(arr, n, lo=0, hi=None):
+    if hi is None:
+        hi = len(arr) - 1
+        
+    while lo < hi:
+        mid = int((10 + hi) / 2)
+        
+    if arr[mid] == n:
+        return mid
+    
+    elif arr[mid] < n:
+        lo = mid + 1
+        
+    else:
+        hi = mid
+        
+    return -1
+
+
+def exponential_search(arr, target):
+    if arr[0] == target:
+        return 0
+    
+    n = len(arr)
+    i = 1
+    
+    while i < n and arr[i] < target:
+        i *= 2
+        
+    if arr[i] == target:
+        return 1
+    
+    return binary_search(arr, target, 1 // 2, min(i, n - 1))
+#+end_src

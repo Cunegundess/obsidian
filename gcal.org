@@ -1,0 +1,75 @@
+
+* CONTA CLARO
+:PROPERTIES:
+:ETag:     "3487591340251967"
+:calendar-id: lucascsantana6@gmail.com
+:entry-id: c8om4p1ncpijeb9g6goj2b9k6ks64b9pcgp3ebb3cph62eb36gq6ap316o_20260415T103000Z/lucascsantana6@gmail.com
+:org-gcal-managed: gcal
+:END:
+:org-gcal:
+<2026-04-15 qua 07:30-23:30>
+:END:
+
+* CONTA CLARO
+:PROPERTIES:
+:ETag:     "3487591340251967"
+:calendar-id: lucascsantana6@gmail.com
+:entry-id: c8om4p1ncpijeb9g6goj2b9k6ks64b9pcgp3ebb3cph62eb36gq6ap316o_20260515T103000Z/lucascsantana6@gmail.com
+:org-gcal-managed: gcal
+:END:
+:org-gcal:
+<2026-05-15 sex 07:30-23:30>
+:END:
+
+* CONTA CLARO
+:PROPERTIES:
+:ETag:     "3487591340251967"
+:calendar-id: lucascsantana6@gmail.com
+:entry-id: c8om4p1ncpijeb9g6goj2b9k6ks64b9pcgp3ebb3cph62eb36gq6ap316o_20260615T103000Z/lucascsantana6@gmail.com
+:org-gcal-managed: gcal
+:END:
+:org-gcal:
+<2026-06-15 seg 07:30-23:30>
+:END:
+
+* Call Engenheiro de Backend <>  Lucas Cunegundes
+:PROPERTIES:
+:ETag:     "3553933485420414"
+:HANGOUTS: [[https://meet.google.com/ecj-hxvs-ddr][Join Hangouts Meet]]
+:calendar-id: lucascsantana6@gmail.com
+:entry-id: 137m6i0vmit48dei7bgptpgq8m/lucascsantana6@gmail.com
+:org-gcal-managed: gcal
+:END:
+:org-gcal:
+<2026-04-23 qui 16:00-16:30>
+:END:
+
+* WEX Interview Invitation - Lucas De Santana - Jr. Software Development Engineer
+:PROPERTIES:
+:ETag:     "3556016095859486"
+:HANGOUTS: [[https://meet.google.com/nrh-jpzk-vio][Join Hangouts Meet]]
+:calendar-id: lucascsantana6@gmail.com
+:entry-id: _at2lglq5b1al6g1i65j3ecj268q68oj1c5h6cpj6c9gm6d1i6gr32dj6cgrjidplc503aoj268pj2p1m5kp6aohl5kq6aoho5ks66d1o5kqj4c9o74qjic1o6ko64/lucascsantana6@gmail.com
+:org-gcal-managed: gcal
+:END:
+:org-gcal:
+<2026-05-12 ter 11:30-12:00>
+
+Hello Lucas,
+Exciting news! Your interview for the Jr. Software Development Engineer position is officially confirmed. We're eager to speak with you, and answer any questions you might have about this opportunity.
+You're scheduled for:
+Interview (30 minutes)
+When: May 12, 2026, 11:30 AM - 12:00 PM (America/Sao_Paulo)
+Where: Google Meet -  join the meeting (https://meet.google.com/nrh-jpzk-vio)
+Meeting ID: nrh-jpzk-vio
+Interviewer(s): Ana Carolina de Souza e Silva (Strategic Sourcing Partner)
+​​​​​​​Should you need to make any changes, you can easily do so by clicking here:
+https://sh.phenom.com/9yqRLBN
+With your consent, this interview may be recorded or transcribed for recruitment and evaluation purposes. All information will be kept confidential and handled in line with applicable privacy laws.
+​​​​​​​
+Thank you,
+Ana Carolina de Souza e Silva
+Connect with us on
+Copyrights 2026, WEX
+   
+:END:

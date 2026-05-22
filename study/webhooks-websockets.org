@@ -1,0 +1,14 @@
+* Webhook
+É um modelo de notificações via HTTP, generalizando, você cria uma "API invertida" ao receber uma requisição POST de uma integração para notificar algum processo, ou seja, ao invés de enviar requisições para checar o status de algo, você recebe uma notificação quando o status de algo for alterado por exemplo
+- Possui comunicação unidirecional
+- Baseado em eventos
+- Não mantém conexão aberta
+- É mais simples e barato
+- Excelente para integrações backend
+
+* Websocket
+É uma conexão persistente entre cliente e servidor, mais utilizado onde a comunicação realtime é necessária como chats, ferramentas de colab simultâneo etc..
+- Possui comunicação bidirecional
+- Conexão contínua
+- Baixa latência
+

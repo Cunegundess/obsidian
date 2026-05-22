@@ -1,0 +1,424 @@
+#+TITLE: WEX Interview Prep - 7 Day Intensive Plan
+#+AUTHOR: Lucas
+#+STARTUP: overview
+#+STARTUP: logdone
+#+TODO: TODO NEXT DOING WAITING REVIEW | DONE CANCELLED
+
+* Goals
+- Improve DSA fundamentals
+- Improve technical communication in English
+- Prepare for backend/system design interviews
+- Improve confidence during live coding
+- Practice AI-assisted engineering discussions
+- Prepare for behavioral interviews
+
+* Daily Global Rules
+- Speak everything in English while studying
+- Think out loud while solving problems
+- Focus on understanding, not memorization
+- Always explain:
+  - brute force
+  - optimization
+  - tradeoffs
+  - complexity
+- Record short voice explanations daily
+
+* Interview Checklist
+** Technical
+- [ ] Explain Big O clearly
+- [ ] Solve easy LeetCode without freezing
+- [ ] Solve medium-easy with guidance
+- [ ] Explain API lifecycle
+- [ ] Explain Docker basics
+- [ ] Explain queues/cache/retries
+- [ ] Explain SQL joins/indexes
+- [ ] Explain tests and CI/CD
+- [ ] Explain AI-assisted workflow
+
+** Communication
+- [ ] Speak slowly
+- [ ] Think out loud
+- [ ] Ask clarifying questions
+- [ ] Explain tradeoffs
+- [ ] Avoid long silence
+- [ ] Practice STAR responses
+
+* Reusable Interview Phrases
+** Clarifying
+- "Can I clarify the requirements first?"
+- "What are the expected constraints?"
+- "Should I optimize for time or memory?"
+
+** Thinking
+- "Let me think out loud."
+- "My first approach would be brute force."
+- "I think we can optimize this using a hash map."
+
+** Complexity
+- "Time complexity is O(n)."
+- "Space complexity is O(n)."
+
+** Uncertainty
+- "I’m not fully sure, but this is how I would approach it."
+- "I haven’t implemented this in production yet, but..."
+
+* Resources
+** DSA
+- Augusto Galego DSA Course
+- https://leetcode.com
+- https://neetcode.io
+
+** System Design
+- https://github.com/donnemartin/system-design-primer
+- https://bytebytego.com
+
+** English
+- https://youtube.com/@EnglishwithLucy
+- https://youtube.com/@SpeakEnglishWithVanessa
+
+* DAY 1 - Core Foundations
+DEADLINE: <2026-05-22 Fri>
+
+** TODO Study Big O
+- Arrays
+- Hash Maps
+- Strings
+- Complexity basics
+
+** TODO Augusto Galego DSA Course
+- Complete corresponding lessons for:
+  - Arrays
+  - Hash Maps
+  - Strings
+
+** TODO Solve LeetCode Problems
+- [ ] Two Sum
+- [ ] Contains Duplicate
+- [ ] Valid Anagram
+- [ ] Valid Palindrome
+
+** TODO Backend Fundamentals
+- HTTP methods
+- REST
+- JSON
+- Status codes
+- Request lifecycle
+- Idempotency
+
+** TODO English Practice
+Record yourself answering:
+- Tell me about yourself
+- Why backend engineering?
+- How do you use AI in your workflow?
+
+** TODO AI-Assisted Engineering
+- Solve Two Sum alone
+- Ask AI for another solution
+- Compare:
+  - readability
+  - complexity
+  - edge cases
+
+** TODO Mock Interview
+Practice:
+1. Clarify
+2. Brute force
+3. Optimize
+4. Code
+5. Test
+6. Complexity
+
+* DAY 2 - Sliding Window + Docker
+DEADLINE: <2026-05-23 Sat>
+
+** TODO DSA Topics
+- Sliding Window
+- Two Pointers
+- Stack
+
+** TODO Augusto Galego DSA Course
+- Complete stack/sliding window sections
+
+** TODO Solve LeetCode Problems
+- [ ] Best Time to Buy and Sell Stock
+- [ ] Valid Parentheses
+- [ ] Longest Substring Without Repeating Characters
+
+** TODO Docker Study
+- Containers
+- Images
+- Environment variables
+- Health checks
+
+** TODO Practice
+- Dockerize a simple Python API
+
+** TODO English Speaking
+Explain:
+- What Docker solves
+- What microservices are
+- API communication
+
+** TODO AI Practice
+- Generate Dockerfile using AI
+- Explain every line yourself
+
+** TODO Mock System Design
+Prompt:
+- Design a simple payment API
+
+* DAY 3 - Linked Lists + Testing
+DEADLINE: <2026-05-24 Sun>
+
+** TODO DSA Topics
+- Linked Lists
+- Queue
+- Stack review
+
+** TODO Augusto Galego DSA Course
+- Linked Lists
+- Queue implementation
+
+** TODO Solve LeetCode Problems
+- [ ] Reverse Linked List
+- [ ] Merge Two Sorted Lists
+- [ ] Implement Queue Using Stacks
+
+** TODO Testing Study
+- Unit tests
+- Integration tests
+- Mocking
+- Pytest
+
+** TODO Practice Testing
+Write tests for:
+- Palindrome checker
+- Payment validator
+- Transaction service
+
+** TODO English Practice
+Explain:
+- Unit vs integration tests
+- Why tests matter in financial systems
+
+** TODO AI Review Practice
+Ask AI to generate tests.
+Review:
+- missing edge cases
+- weak assertions
+- bad assumptions
+
+** TODO STAR Interview Practice
+Prepare stories for:
+- difficult bug
+- deadline pressure
+- learning quickly
+- teamwork conflict
+
+* DAY 4 - Trees + System Design
+DEADLINE: <2026-05-25 Mon>
+
+** TODO DSA Topics
+- Trees
+- DFS
+- BFS
+
+** TODO Augusto Galego DSA Course
+- Trees
+- DFS/BFS
+
+** TODO Solve LeetCode Problems
+- [ ] Maximum Depth of Binary Tree
+- [ ] Same Tree
+- [ ] Invert Binary Tree
+
+** TODO System Design Study
+- Microservices
+- Queues
+- Redis
+- Kafka/RabbitMQ
+- Retries
+- Observability
+
+** TODO English Whiteboard Practice
+Prompt:
+- Design a fraud detection service
+
+Mention:
+- API
+- rules engine
+- queue
+- database
+- logs
+
+** TODO AI Design Critique
+Ask AI:
+- How would you scale a fraud detection service?
+
+Review tradeoffs and weaknesses.
+
+* DAY 5 - Databases + Production Thinking
+DEADLINE: <2026-05-26 Tue>
+
+** TODO SQL Study
+- JOIN
+- GROUP BY
+- Indexes
+- Transactions
+- Locks
+- N+1 problem
+
+** TODO SQL Practice
+- Write JOIN queries
+- Aggregate queries
+- Filtering queries
+
+** TODO Production Engineering
+Study:
+- Logging
+- Metrics
+- Tracing
+- Rate limiting
+- Retries
+- Circuit breaker
+
+** TODO English Practice
+Answer:
+- How would you debug a production issue?
+
+Structure:
+1. gather logs
+2. reproduce
+3. isolate
+4. fix
+5. validate
+6. monitor
+
+** TODO AI SQL Review
+Ask AI to optimize a SQL query.
+Validate:
+- correctness
+- readability
+- index usage
+
+** TODO Behavioral Practice
+Question:
+- Tell me about a mistake you made
+
+* DAY 6 - Full Simulation Day
+DEADLINE: <2026-05-27 Wed>
+
+** TODO Full Coding Interview Simulation
+- 45 min
+- Speak continuously
+- Explain tradeoffs
+- Test solution manually
+
+** TODO System Design Simulation
+Prompt:
+- Design suspicious transaction detection service
+
+Discuss:
+- API
+- queue
+- worker
+- retries
+- logs
+- observability
+
+** TODO Behavioral Interview Simulation
+Answer in English:
+- teamwork
+- ownership
+- conflict
+- learning
+- AI usage
+
+** TODO Resume Walkthrough
+Explain:
+- projects
+- impact
+- decisions
+- architecture choices
+
+Focus on:
+- Django
+- Docker
+- APIs
+- Monitoring
+- Automation
+
+* DAY 7 - Final Review
+DEADLINE: <2026-05-28 Thu>
+
+** TODO Re-solve Key Problems
+Without looking:
+- [ ] Two Sum
+- [ ] Valid Parentheses
+- [ ] Reverse Linked List
+- [ ] Maximum Depth of Binary Tree
+
+** TODO Create Review Sheet
+Include:
+- Big O
+- HTTP status codes
+- SQL joins
+- Docker basics
+- Queue vs cache
+- Testing pyramid
+- AI talking points
+
+** TODO English Confidence Practice
+Practice:
+- introductions
+- thinking out loud
+- clarifying questions
+
+** TODO AI Engineering Questions
+Prepare polished answers for:
+- How do you use AI?
+- How do you validate AI-generated code?
+- When should developers not trust AI?
+
+** TODO Mental Preparation
+Review:
+- Communication matters more than perfection
+- Juniors are evaluated on fundamentals
+- Clarity > speed
+- Consistency > brilliance
+
+* High Priority Topics
+** DSA
+- Arrays
+- Hash Maps
+- Sliding Window
+- Stack
+- Queue
+- Linked Lists
+- Trees
+- BFS/DFS
+
+** Backend
+- REST
+- Docker
+- SQL
+- Testing
+- CI/CD
+- Observability
+- Queues
+- Retries
+
+** Communication
+- Thinking out loud
+- Explaining tradeoffs
+- STAR method
+- English confidence
+
+* Final Reminder
+- You do not need to sound like a senior engineer
+- You need to sound:
+  - clear
+  - collaborative
+  - curious
+  - structured
+  - reliable
